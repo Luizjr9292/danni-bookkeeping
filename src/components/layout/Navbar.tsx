@@ -43,7 +43,7 @@ export function Navbar() {
                             onClick={() => setLanguage('en')}
                             className={`transition-colors hover:text-primary ${language === 'en' ? 'text-primary font-bold' : 'text-slate-400'}`}
                         >
-                            English
+                            EN
                         </button>
                         <span className="text-slate-300">|</span>
                         <button
@@ -59,13 +59,32 @@ export function Navbar() {
                     </Link>
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden p-2 text-slate-600"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                <div className="flex items-center gap-4">
+                    {/* Mobile Language Toggle */}
+                    <div className="flex items-center gap-2 text-sm font-medium text-slate-600 md:hidden">
+                        <button
+                            onClick={() => setLanguage('en')}
+                            className={`transition-colors hover:text-primary ${language === 'en' ? 'text-primary font-bold' : 'text-slate-400'}`}
+                        >
+                            EN
+                        </button>
+                        <span className="text-slate-300">|</span>
+                        <button
+                            onClick={() => setLanguage('zh')}
+                            className={`transition-colors hover:text-primary ${language === 'zh' ? 'text-primary font-bold' : 'text-slate-400'}`}
+                        >
+                            中文
+                        </button>
+                    </div>
+
+                    {/* Mobile Menu Button */}
+                    <button
+                        className="md:hidden p-2 text-slate-600"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}
@@ -82,21 +101,7 @@ export function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <div className="flex items-center gap-4 py-3 px-1">
-                            <button
-                                onClick={() => setLanguage('en')}
-                                className={`text-sm font-medium ${language === 'en' ? 'text-primary' : 'text-slate-500'}`}
-                            >
-                                English
-                            </button>
-                            <span className="text-slate-300">|</span>
-                            <button
-                                onClick={() => setLanguage('zh')}
-                                className={`text-sm font-medium ${language === 'zh' ? 'text-primary' : 'text-slate-500'}`}
-                            >
-                                中文
-                            </button>
-                        </div>
+
                         <div className="pt-2">
                             <Link
                                 href="#contact"
