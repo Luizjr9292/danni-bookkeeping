@@ -80,15 +80,62 @@ export const translations = {
                 },
             ],
         },
+        pricing: {
+            title: 'Simple, Transparent Pricing',
+            subtitle: 'Flexible packages to suit your business needs. Starting from $150/month.',
+            cta: 'Book a Free Consultation',
+            note: 'All packages include free onboarding. No lock-in contracts.',
+            items: [
+                {
+                    name: 'Starter',
+                    price: '$150',
+                    period: '/month',
+                    description: 'Perfect for sole traders and very small businesses.',
+                    features: [
+                        'Bank reconciliation',
+                        'Monthly GST filing',
+                        'Basic financial report',
+                        'Email support',
+                    ],
+                },
+                {
+                    name: 'Standard',
+                    price: '$350',
+                    period: '/month',
+                    description: 'Ideal for growing businesses with employees.',
+                    features: [
+                        'Everything in Starter',
+                        'Payroll for up to 5 staff',
+                        'Accounts payable & receivable',
+                        'Monthly insights report',
+                        'Priority support',
+                    ],
+                    highlight: true,
+                },
+                {
+                    name: 'Premium',
+                    price: '$650',
+                    period: '/month',
+                    description: 'Full-service support for established businesses.',
+                    features: [
+                        'Everything in Standard',
+                        'Unlimited payroll',
+                        'Cash flow forecasting',
+                        'Xero setup & training',
+                        'Dedicated account manager',
+                    ],
+                },
+            ],
+        },
         about: {
             title: 'Meet Danni Wang',
             subtitle: 'Qualified Accountant & Bookkeeping Specialist',
             professionalProfileTitle: 'Professional Profile',
             professionalProfileText: 'Danni Wang is a qualified accountant with over six years of experience in NZ accounting firms. She now leverages her expertise to provide high-quality bookkeeping and administrative support to small businesses.',
             professionalValuesTitle: 'Professional Values',
-            professionalValuesText: 'I am deeply committed to the success of New Zealand’s small business community. My approach reflects core values of integrity, precision, and a genuine desire to see your business thrive. When you work with me, you’re partnering with an expert who is dedicated to your long-term growth and financial stability.',
+            professionalValuesText: 'I am deeply committed to the success of New Zealand\u2019s small business community. My approach reflects core values of integrity, precision, and a genuine desire to see your business thrive. When you work with me, you\u2019re partnering with an expert who is dedicated to your long-term growth and financial stability.',
             location: 'Tauranga, Bay of Plenty | Serving clients across New Zealand',
-            quote: '"I handle the numbers so you can focus on your business."',
+            quote: '\u201cI handle the numbers so you can focus on your business.\u201d',
         },
         contact: {
             title: 'Get in Touch',
@@ -201,6 +248,53 @@ export const translations = {
                 },
             ],
         },
+        pricing: {
+            title: '透明定价，简单明了',
+            subtitle: '灵活套餐，满足您的业务需求。月费低至 $150 起。',
+            cta: '预约免费咨询',
+            note: '所有套餐均包含免费入门指导，无锁定合同。',
+            items: [
+                {
+                    name: '基础套餐',
+                    price: '$150',
+                    period: '/月',
+                    description: '适合个体经营者及微型企业。',
+                    features: [
+                        '银行对账',
+                        '每月 GST 申报',
+                        '基础财务报告',
+                        '邮件支持',
+                    ],
+                },
+                {
+                    name: '标准套餐',
+                    price: '$350',
+                    period: '/月',
+                    description: '适合有员工的成长型企业。',
+                    features: [
+                        '含基础套餐所有服务',
+                        '最多 5 名员工的薪资管理',
+                        '应付及应收账款管理',
+                        '每月业务洞察报告',
+                        '优先支持',
+                    ],
+                    highlight: true,
+                },
+                {
+                    name: '高级套餐',
+                    price: '$650',
+                    period: '/月',
+                    description: '适合成熟企业的全方位财务支持。',
+                    features: [
+                        '含标准套餐所有服务',
+                        '无限员工薪资管理',
+                        '现金流预测',
+                        'Xero 系统设置与培训',
+                        '专属客户经理',
+                    ],
+                },
+            ],
+        },
         about: {
             title: '走近 Danni Wang',
             subtitle: '资深会计师与簿记专家',
@@ -209,44 +303,11 @@ export const translations = {
             professionalValuesTitle: '执业价值',
             professionalValuesText: '我全心致力于新西兰小微企业社区的成功。我的服务理念体现了诚信、精准的内核，以及见证您业务蓬勃发展的真诚愿望。与我合作，即是与一位致力于您长期增长和财务稳定的资深会计师并肩同行。',
             location: '陶朗加，丰盛湾 | 服务覆盖全纽客户',
-            quote: '“我为您打理财务数据，助您专注业务经营。”',
+            quote: '"我为您打理财务数据，助您专注业务经营。"',
         },
         contact: {
             title: '联系方式',
-            subtitle: '在线联系', // Using subtitle here to map to 'Get in Touch' as per structure, or 'Based in Tauranga...'? Note: User structure mismatch. User provided: title: 'Contacts', getInTouch: '...', description: '...'. I need to map this to my existing structure: title, subtitle, form labels.
-            // Let's look closely at user input vs my structure.
-            // My structure: contact: { title, subtitle, form: { nameLabel, ... } }
-            // User input: contact: { title: 'Contact', getInTouch: 'Get in Touch', description: '...', form: { name: '...', ... }, disclaimer: '...' }
-            // MAPPING:
-            // contact.title -> User's contact.getInTouch ("在线联系") ("Get in Touch" equiv)
-            // contact.subtitle -> User's contact.description ("我通常会在...")
-            // form.nameLabel -> User's form.name
-            // form.emailLabel -> User's form.email
-            // ...
-            // The user also provided a disclaimer inside contact. I should move that to Footer disclaimer if appropriate, or keep it in contact?
-            // Wait, the user provided a global disclaimer in the zh block at the end?
-            // "disclaimer: 'Danni Bookkeeping ...'" inside contact block in user input.
-            // In my structure, disclaimer is in footer.
-            // Let's use the user's disclaimer for the footer.
-
-            // Re-mapping details:
-            // English structure: title='Get in Touch', subtitle='Based in Tauranga...' 
-            // User ZH structure: title='联系方式', getInTouch='在线联系', description='Typically respond...' 
-            // It seems user wants "Contact" -> "联系方式" and "Get in Touch" -> "在线联系".
-            // My code only has `title` and `subtitle`. 
-            // I will use "在线联系" (Online Contact/Get in Touch) as `title`.
-            // I will use "总部位于陶朗加 (Tauranga)..." (from Hero? No, user provided description in contact)
-            // User provided: "我通常会在 24 小时内回复..." as description.
-            // I will use that for `subtitle` or maybe `availabilityNote`?
-            // English `availabilityNote` is "I typically respond within 24 hours..."
-            // So `contact.description` -> `availabilityNote`.
-            // What for `subtitle`? "Based in Tauranga..." -> User didn't strictly provide this in contact, but in Hero "总部位于陶朗加...".
-            // I'll stick to the "Based in Tauranga..." translation if I can find it, or just use the user's description as subtitle if it fits better.
-
-            // Actually, let's look at the user Input again.
-            // about: { profileTitle: '职业背景', valuesTitle: '执业价值' ... } -> My keys are `professionalProfileTitle`.
-            // I will use the user's VALUES but map them to MY KEYS.
-
+            subtitle: '总部位于陶朗加，服务覆盖全纽。欢迎与我们探讨您的簿记需求。',
             form: {
                 nameLabel: '姓名',
                 namePlaceholder: '您的姓名',
@@ -254,9 +315,7 @@ export const translations = {
                 emailPlaceholder: 'you@company.com',
                 phoneLabel: '联系电话',
                 phonePlaceholder: 'e.g. 021 123 4567',
-                locationLabel: '所在地区', // User didn't provide this specific key in form block above, checking... 
-                // User input form: name, email, phone, message, submit. MISSING location.
-                // I will infer "所在地区" for Location and "e.g. Tauranga..." for placeholder.
+                locationLabel: '所在地区',
                 locationPlaceholder: '例如：陶朗加, 惠灵顿, 奥克兰',
                 messageLabel: '留言内容',
                 submitButton: '发送留言',
@@ -264,7 +323,7 @@ export const translations = {
                 successTitle: '谢谢！',
                 successMessage: '已收到您的留言，我会尽快联系您安排咨询。',
                 sendAnother: '发送另一条留言',
-                availabilityNote: '我通常会在 24 小时内回复。为了更专注于您的业务需求，咨询通常安排在非工作时间或周末。', // User provided this in `description`
+                availabilityNote: '我通常会在 24 小时内回复。为了更专注于您的业务需求，咨询通常安排在非工作时间或周末。',
                 emailDirectly: '直接发邮件？',
             },
         },
