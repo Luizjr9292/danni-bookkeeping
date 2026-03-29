@@ -1,13 +1,11 @@
 'use client';
-
-import { Landmark, FileText, Users, BarChart3 } from 'lucide-react';
+import { Landmark, FileText, Users, BarChart3, Building2 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const serviceIcons = [Landmark, FileText, Users, BarChart3];
+const serviceIcons = [Landmark, FileText, Users, BarChart3, Building2];
 
 export function Services() {
     const { t } = useLanguage();
-
     return (
         <section id="services" className="bg-slate-50 py-20 sm:py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
