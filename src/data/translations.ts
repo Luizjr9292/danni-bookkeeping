@@ -23,66 +23,30 @@ export const translations = {
             title: 'Comprehensive Bookkeeping Services',
             subtitle: 'Tailored solutions for New Zealand small businesses.',
             items: [
-                {
-                    title: 'Bookkeeping Support',
-                    description: 'Daily processing, bank reconciliations, and cash flow tracking to keep your finances organized.',
-                },
-                {
-                    title: 'GST, Income Tax & Compliance',
-                    description: 'Accurate GST, FBT, and Income Tax preparation and filing to ensure you remain fully compliant with IRD requirements.',
-                },
-                {
-                    title: 'Payroll Administration',
-                    description: 'Full service payroll administration including payday filing, leave management, and staff queries.',
-                },
-                {
-                    title: 'Business Insights & Reporting',
-                    description: 'Monthly financial insights and customized metrics dashboards to help you make informed decisions.',
-                },
-                {
-                    title: 'Multi-Entity Bookkeeping',
-                    description: 'Seamless bookkeeping support for business owners operating multiple entities, keeping each set of accounts accurate, compliant, and clearly structured.',
-                },
+                { title: 'Bookkeeping Support', description: 'Daily processing, bank reconciliations, and cash flow tracking to keep your finances organized.' },
+                { title: 'GST, Income Tax & Compliance', description: 'Accurate GST, FBT, and Income Tax preparation and filing to ensure you remain fully compliant with IRD requirements.' },
+                { title: 'Payroll Administration', description: 'Full service payroll administration including payday filing, leave management, and staff queries.' },
+                { title: 'Business Insights & Reporting', description: 'Monthly financial insights and customized metrics dashboards to help you make informed decisions.' },
+                { title: 'Multi-Entity Bookkeeping', description: 'Seamless bookkeeping support for business owners operating multiple entities, keeping each set of accounts accurate, compliant, and clearly structured.' },
             ],
         },
         virtualAdvantage: {
             title: 'The Virtual Advantage',
             subtitle: 'Secure, cloud-based, and flexible—wherever you are in NZ.',
             items: [
-                {
-                    name: 'Secure & Cloud-Based',
-                    description: 'We use Xero and secure cloud tools to ensure your financial data is safe, backed up, and accessible anytime.',
-                },
-                {
-                    name: 'Flexible & Efficient',
-                    description: 'No need to provide office space. We work remotely, giving you the flexibility to scale support as needed.',
-                },
-                {
-                    name: 'Nationwide Service',
-                    description: 'Whether you represent a trade in Auckland or a boutique in Queenstown, we serve businesses across all of NZ.',
-                },
+                { name: 'Secure & Cloud-Based', description: 'We use Xero and secure cloud tools to ensure your financial data is safe, backed up, and accessible anytime.' },
+                { name: 'Flexible & Efficient', description: 'No need to provide office space. We work remotely, giving you the flexibility to scale support as needed.' },
+                { name: 'Nationwide Service', description: 'Whether you represent a trade in Auckland or a boutique in Queenstown, we serve businesses across all of NZ.' },
             ],
         },
         process: {
             title: 'How It Works',
             subtitle: 'A simple, transparent process to keep your numbers in check.',
             steps: [
-                {
-                    name: 'Data Capture',
-                    description: 'We set up seamless digital systems to capture your receipts and invoices automatically.',
-                },
-                {
-                    name: 'Daily Processing',
-                    description: 'Every transaction is coded and reconciled daily, keeping your books up to date.',
-                },
-                {
-                    name: 'Data Validation',
-                    description: 'Regular checks and balances ensure accuracy and compliance with GST and tax rules.',
-                },
-                {
-                    name: 'Monthly Reporting',
-                    description: 'Receive clear, actionable financial reports to understand your business performance.',
-                },
+                { name: 'Data Capture', description: 'We set up seamless digital systems to capture your receipts and invoices automatically.' },
+                { name: 'Daily Processing', description: 'Every transaction is coded and reconciled daily, keeping your books up to date.' },
+                { name: 'Data Validation', description: 'Regular checks and balances ensure accuracy and compliance with GST and tax rules.' },
+                { name: 'Monthly Reporting', description: 'Receive clear, actionable financial reports to understand your business performance.' },
             ],
         },
         pricing: {
@@ -93,48 +57,16 @@ export const translations = {
             oneOff: 'Need a one-off service? Get in touch and we\'ll tailor a solution to your specific needs.',
             items: [
                 {
-                    name: 'Starter',
-                    price: '$200',
-                    period: '/month',
-                    description: 'Perfect for sole traders and very small businesses.',
-                    features: [
-                        'Bank reconciliation',
-                        'Monthly GST filing',
-                        'Basic financial report',
-                        'Email support',
-                        'Monthly check-in 30 min — virtual (NZ-wide) or in-person (Tauranga only)',
-                    ],
+                    name: 'Starter', price: '$200', period: '/month', description: 'Perfect for sole traders and very small businesses.',
+                    features: ['Bank reconciliation', 'Monthly GST filing', 'Basic financial report', 'Email support', 'Monthly check-in 30 min — virtual (NZ-wide) or in-person (Tauranga only)'],
                 },
                 {
-                    name: 'Standard',
-                    price: '$450',
-                    period: '/month',
-                    description: 'Ideal for growing businesses with employees.',
-                    features: [
-                        'Everything in Starter',
-                        'Payroll for up to 5 staff',
-                        'Accounts payable & receivable',
-                        'Monthly insights report',
-                        'Fixed asset register maintenance',
-                        'Priority support',
-                        'Monthly check-in 45 min — virtual (NZ-wide) or in-person (Tauranga only)',
-                    ],
-                    highlight: true,
+                    name: 'Standard', price: '$450', period: '/month', description: 'Ideal for growing businesses with employees.', highlight: true,
+                    features: ['Everything in Starter', 'Payroll for up to 5 staff', 'Accounts payable & receivable', 'Monthly insights report', 'Fixed asset register maintenance', 'Priority support', 'Monthly check-in 45 min — virtual (NZ-wide) or in-person (Tauranga only)'],
                 },
                 {
-                    name: 'Premium',
-                    price: '$750',
-                    period: '/month',
-                    description: 'Full-service support for established businesses.',
-                    features: [
-                        'Everything in Standard',
-                        'Unlimited payroll',
-                        'Cash flow forecasting',
-                        'Xero setup & training',
-                        'Multi-entity bookkeeping support',
-                        'Dedicated account manager',
-                        'Extended monthly check-in 60 min — virtual (NZ-wide) or in-person (Tauranga only)',
-                    ],
+                    name: 'Premium', price: '$750', period: '/month', description: 'Full-service support for established businesses.',
+                    features: ['Everything in Standard', 'Unlimited payroll', 'Cash flow forecasting', 'Xero setup & training', 'Multi-entity bookkeeping support', 'Dedicated account manager', 'Extended monthly check-in 60 min — virtual (NZ-wide) or in-person (Tauranga only)'],
                 },
             ],
         },
@@ -151,6 +83,14 @@ export const translations = {
         contact: {
             title: 'Get in Touch',
             subtitle: 'Based in Tauranga, working with businesses across NZ. Let\'s discuss your bookkeeping needs.',
+            bookCallTitle: 'Book a Discovery Call',
+            bookCallDesc: 'Free 20-minute call via Google Meet.',
+            bookCallNote: 'Available evenings & weekends. No obligation — just a conversation to understand your needs.',
+            bookCallBtn: 'Book a Free Call',
+            sendMessageTitle: 'Send a Message',
+            sendMessageDesc: 'Prefer to write first? No problem.',
+            sendMessageNote: 'Fill in the form below and Danni will get back to you within 24 hours.',
+            sendMessageBtn: 'Write a Message',
             form: {
                 nameLabel: 'Name',
                 namePlaceholder: 'Your Name',
@@ -202,66 +142,30 @@ export const translations = {
             title: '全方位簿记服务',
             subtitle: '为新西兰小微企业量身定制的财务方案。',
             items: [
-                {
-                    title: '簿记支持',
-                    description: '日常账务处理、银行对账和现金流跟踪，确保您的财务井然有序。',
-                },
-                {
-                    title: 'GST、所得税与税务合规',
-                    description: '准确编制并申报 GST、所得税 (Income Tax) 和 FBT，确保您完全符合新西兰税务局 (IRD) 的合规要求。',
-                },
-                {
-                    title: '薪资管理',
-                    description: '全方位薪资管理服务，包括薪资申报 (Payday Filing)、假期管理及员工咨询。',
-                },
-                {
-                    title: '业务洞察与报表',
-                    description: '每月的财务分析和定制化仪表板，助您做出明智的业务决策。',
-                },
-                {
-                    title: '多实体簿记',
-                    description: '为拥有多家企业实体的业主提供无缝簿记支持，确保每套账目准确、合规、结构清晰。',
-                },
+                { title: '簿记支持', description: '日常账务处理、银行对账和现金流跟踪，确保您的财务井然有序。' },
+                { title: 'GST、所得税与税务合规', description: '准确编制并申报 GST、所得税 (Income Tax) 和 FBT，确保您完全符合新西兰税务局 (IRD) 的合规要求。' },
+                { title: '薪资管理', description: '全方位薪资管理服务，包括薪资申报 (Payday Filing)、假期管理及员工咨询。' },
+                { title: '业务洞察与报表', description: '每月的财务分析和定制化仪表板，助您做出明智的业务决策。' },
+                { title: '多实体簿记', description: '为拥有多家企业实体的业主提供无缝簿记支持，确保每套账目准确、合规、结构清晰。' },
             ],
         },
         virtualAdvantage: {
             title: '云端服务优势',
             subtitle: '安全、基于云端且灵活——无论您在新西兰何处。',
             items: [
-                {
-                    name: '安全且基于云端',
-                    description: '我们使用 Xero 和安全云端工具，确保您的财务数据安全、备份并可随时访问。',
-                },
-                {
-                    name: '灵活且高效',
-                    description: '无需提供办公室。我们远程办公，让您可以根据需求灵活调整支持力度。',
-                },
-                {
-                    name: '服务覆盖全纽',
-                    description: '无论您是在奥克兰从事贸易，还是在皇后镇经营精品店，我们的服务覆盖全纽。',
-                },
+                { name: '安全且基于云端', description: '我们使用 Xero 和安全云端工具，确保您的财务数据安全、备份并可随时访问。' },
+                { name: '灵活且高效', description: '无需提供办公室。我们远程办公，让您可以根据需求灵活调整支持力度。' },
+                { name: '服务覆盖全纽', description: '无论您是在奥克兰从事贸易，还是在皇后镇经营精品店，我们的服务覆盖全纽。' },
             ],
         },
         process: {
             title: '服务流程',
             subtitle: '简单、透明的流程，让您的财务数据清晰受控。',
             steps: [
-                {
-                    name: '数据采集',
-                    description: '我们建立无缝的数字化系统，自动采集您的收据和发票。',
-                },
-                {
-                    name: '日常处理',
-                    description: '每笔交易都会进行日常编码和对账，确保账目实时更新。',
-                },
-                {
-                    name: '数据校验',
-                    description: '定期的核查与平衡，确保数据的准确性并符合 GST 和税务规则。',
-                },
-                {
-                    name: '月度报表',
-                    description: '获取清晰、具备指导意义的财务报告，深入了解您的业务表现。',
-                },
+                { name: '数据采集', description: '我们建立无缝的数字化系统，自动采集您的收据和发票。' },
+                { name: '日常处理', description: '每笔交易都会进行日常编码和对账，确保账目实时更新。' },
+                { name: '数据校验', description: '定期的核查与平衡，确保数据的准确性并符合 GST 和税务规则。' },
+                { name: '月度报表', description: '获取清晰、具备指导意义的财务报告，深入了解您的业务表现。' },
             ],
         },
         pricing: {
@@ -272,48 +176,16 @@ export const translations = {
             oneOff: '需要单次服务？欢迎联系我们，我们将根据您的具体需求量身定制解决方案。',
             items: [
                 {
-                    name: '基础套餐',
-                    price: '$200',
-                    period: '/月',
-                    description: '适合个体经营者及微型企业。',
-                    features: [
-                        '银行对账',
-                        '每月 GST 申报',
-                        '基础财务报告',
-                        '邮件支持',
-                        '每月30分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
-                    ],
+                    name: '基础套餐', price: '$200', period: '/月', description: '适合个体经营者及微型企业。',
+                    features: ['银行对账', '每月 GST 申报', '基础财务报告', '邮件支持', '每月30分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）'],
                 },
                 {
-                    name: '标准套餐',
-                    price: '$450',
-                    period: '/月',
-                    description: '适合有员工的成长型企业。',
-                    features: [
-                        '含基础套餐所有服务',
-                        '最多 5 名员工的薪资管理',
-                        '应付及应收账款管理',
-                        '每月业务洞察报告',
-                        '固定资产登记管理',
-                        '优先支持',
-                        '每月45分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
-                    ],
-                    highlight: true,
+                    name: '标准套餐', price: '$450', period: '/月', description: '适合有员工的成长型企业。', highlight: true,
+                    features: ['含基础套餐所有服务', '最多 5 名员工的薪资管理', '应付及应收账款管理', '每月业务洞察报告', '固定资产登记管理', '优先支持', '每月45分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）'],
                 },
                 {
-                    name: '高级套餐',
-                    price: '$750',
-                    period: '/月',
-                    description: '适合成熟企业的全方位财务支持。',
-                    features: [
-                        '含标准套餐所有服务',
-                        '无限员工薪资管理',
-                        '现金流预测',
-                        'Xero 系统设置与培训',
-                        '多实体簿记支持',
-                        '专属客户经理',
-                        '每月60分钟延长沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
-                    ],
+                    name: '高级套餐', price: '$750', period: '/月', description: '适合成熟企业的全方位财务支持。',
+                    features: ['含标准套餐所有服务', '无限员工薪资管理', '现金流预测', 'Xero 系统设置与培训', '多实体簿记支持', '专属客户经理', '每月60分钟延长沟通——线上（覆盖全纽）或面对面（仅限陶朗加）'],
                 },
             ],
         },
@@ -330,6 +202,14 @@ export const translations = {
         contact: {
             title: '联系方式',
             subtitle: '总部位于陶朗加，服务覆盖全纽。欢迎与我们探讨您的簿记需求。',
+            bookCallTitle: '预约探索通话',
+            bookCallDesc: '通过 Google Meet 进行免费20分钟通话。',
+            bookCallNote: '工作日晚间及周末均可预约。无需承诺——只是一次了解您需求的对话。',
+            bookCallBtn: '预约免费通话',
+            sendMessageTitle: '发送消息',
+            sendMessageDesc: '更倾向于先写信？没问题。',
+            sendMessageNote: '填写下方表单，Danni 将在24小时内回复您。',
+            sendMessageBtn: '写信给我们',
             form: {
                 nameLabel: '姓名',
                 namePlaceholder: '您的姓名',
