@@ -35,25 +35,22 @@ export function Contact() {
                     <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{t.contact.title}</h2>
                     <p className="mt-4 text-lg text-slate-600">{t.contact.subtitle}</p>
                 </div>
-
                 <div className="mx-auto mt-12 max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-2">
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center">
                         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4"><Calendar className="h-7 w-7" /></div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">Book a Discovery Call</h3>
-                        <p className="text-sm text-slate-600 mb-2">Free 20-minute call via Google Meet.</p>
-                        <p className="text-sm text-slate-500 mb-6">Available evenings & weekends. No obligation — just a conversation to understand your needs.</p>
-                        <a href="https://calendly.com/dannibookkeeping/20min" target="_blank" className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"><Calendar className="h-4 w-4" />Book a Free Call</a>
+                        <h3 className="text-xl font-bold text-slate-900 mb-2">{t.contact.bookCallTitle}</h3>
+                        <p className="text-sm text-slate-600 mb-2">{t.contact.bookCallDesc}</p>
+                        <p className="text-sm text-slate-500 mb-6">{t.contact.bookCallNote}</p>
+                        <a href="https://calendly.com/dannibookkeeping/20min" target="_blank" className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"><Calendar className="h-4 w-4" />{t.contact.bookCallBtn}</a>
                     </div>
-
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center">
                         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4"><MessageSquare className="h-7 w-7" /></div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">Send a Message</h3>
-                        <p className="text-sm text-slate-600 mb-2">Prefer to write first? No problem.</p>
-                        <p className="text-sm text-slate-500 mb-6">Fill in the form below and Danni will get back to you within 24 hours.</p>
-                        <a href="#message-form" className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-primary px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors"><MessageSquare className="h-4 w-4" />Write a Message</a>
+                        <h3 className="text-xl font-bold text-slate-900 mb-2">{t.contact.sendMessageTitle}</h3>
+                        <p className="text-sm text-slate-600 mb-2">{t.contact.sendMessageDesc}</p>
+                        <p className="text-sm text-slate-500 mb-6">{t.contact.sendMessageNote}</p>
+                        <a href="#message-form" className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-primary px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors"><MessageSquare className="h-4 w-4" />{t.contact.sendMessageBtn}</a>
                     </div>
                 </div>
-
                 <div id="message-form" className="mx-auto mt-12 max-w-xl">
                     <form onSubmit={handleSubmit} className="bg-white px-8 py-10 shadow-lg rounded-2xl border border-slate-100">
                         <div className="grid grid-cols-1 gap-y-6">
