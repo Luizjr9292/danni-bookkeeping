@@ -20,8 +20,8 @@ export function Footer() {
                         <ul className="mt-4 space-y-2 text-sm text-slate-300">
                             <li><Link href="#services" className="hover:text-white">{t.nav.services}</Link></li>
                             <li><Link href="#process" className="hover:text-white">{t.nav.process}</Link></li>
-                            <li><Link href="#pricing" className="hover:text-white">{t.nav.pricing}</Link></li>
                             <li><Link href="#about" className="hover:text-white">{t.nav.about}</Link></li>
+                            <li><Link href="#pricing" className="hover:text-white">{t.nav.pricing}</Link></li>
                             <li><Link href="#contact" className="hover:text-white">{t.nav.contact}</Link></li>
                         </ul>
                     </div>
