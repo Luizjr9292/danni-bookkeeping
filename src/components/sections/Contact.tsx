@@ -2,16 +2,11 @@
 
 import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react';
+import { Mail, ArrowUp, Calendar } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Contact() {
     const { t } = useLanguage();
-    // IMPORTANT: Replace "YOUR_FORM_ID" with your actual Formspree Form ID.
-    // 1. Go to https://formspree.io/
-    // 2. Create a new form
-    // 3. Copy the Form ID
-    // 4. Paste it below
     const [state, handleSubmit] = useForm("mwvkrayr");
 
     if (state.succeeded) {
@@ -26,14 +21,8 @@ export function Contact() {
                                 </svg>
                             </div>
                             <h3 className="text-2xl font-bold text-slate-900 mb-4">{t.contact.form.successTitle}</h3>
-                            <p className="text-lg text-slate-600">
-                                {t.contact.form.successMessage}
-                            </p>
-                            <Button
-                                className="mt-8"
-                                variant="outline"
-                                onClick={() => window.location.reload()}
-                            >
+                            <p className="text-lg text-slate-600">{t.contact.form.successMessage}</p>
+                            <Button className="mt-8" variant="outline" onClick={() => window.location.reload()}>
                                 {t.contact.form.sendAnother}
                             </Button>
                         </div>
@@ -53,92 +42,52 @@ export function Contact() {
                     <p className="mt-4 text-lg text-slate-600">
                         {t.contact.subtitle}
                     </p>
+                    
+                        href="https://calendly.com/dannibookkeeping/20min"
+                        target="_blank"
+                        className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"
+                    >
+                        <Calendar className="h-4 w-4" />
+                        Book a Free Discovery Call
+                    </a>
+                    <p className="mt-4 text-sm text-slate-500">Or send us a message below</p>
                 </div>
 
-                <div className="mx-auto mt-16 max-w-xl">
+                <div className="mx-auto mt-12 max-w-xl">
                     <form onSubmit={handleSubmit} className="bg-white px-8 py-10 shadow-lg rounded-2xl border border-slate-100">
                         <div className="grid grid-cols-1 gap-y-6">
                             <div>
-                                <label htmlFor="name" className="block text-sm font-semibold leading-6 text-slate-900">
-                                    {t.contact.form.nameLabel}
-                                </label>
+                                <label htmlFor="name" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.nameLabel}</label>
                                 <div className="mt-2.5">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        autoComplete="name"
-                                        required
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                                        placeholder={t.contact.form.namePlaceholder}
-                                    />
+                                    <input type="text" name="name" id="name" autoComplete="name" required className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder={t.contact.form.namePlaceholder} />
                                     <ValidationError prefix="Name" field="name" errors={state.errors} className="mt-2 text-sm text-red-600" />
                                 </div>
                             </div>
-
                             <div>
-                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-slate-900">
-                                    {t.contact.form.emailLabel}
-                                </label>
+                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.emailLabel}</label>
                                 <div className="mt-2.5">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        autoComplete="email"
-                                        required
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                                        placeholder={t.contact.form.emailPlaceholder}
-                                    />
+                                    <input type="email" name="email" id="email" autoComplete="email" required className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder={t.contact.form.emailPlaceholder} />
                                     <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-2 text-sm text-red-600" />
                                 </div>
                             </div>
-
                             <div>
-                                <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-slate-900">
-                                    {t.contact.form.phoneLabel}
-                                </label>
+                                <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.phoneLabel}</label>
                                 <div className="mt-2.5">
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        id="phone"
-                                        autoComplete="tel"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                                        placeholder={t.contact.form.phonePlaceholder}
-                                    />
+                                    <input type="tel" name="phone" id="phone" autoComplete="tel" className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder={t.contact.form.phonePlaceholder} />
                                     <ValidationError prefix="Phone" field="phone" errors={state.errors} className="mt-2 text-sm text-red-600" />
                                 </div>
                             </div>
-
                             <div>
-                                <label htmlFor="location" className="block text-sm font-semibold leading-6 text-slate-900">
-                                    {t.contact.form.locationLabel}
-                                </label>
+                                <label htmlFor="location" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.locationLabel}</label>
                                 <div className="mt-2.5">
-                                    <input
-                                        type="text"
-                                        name="location"
-                                        id="location"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                                        placeholder={t.contact.form.locationPlaceholder}
-                                    />
+                                    <input type="text" name="location" id="location" className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder={t.contact.form.locationPlaceholder} />
                                     <ValidationError prefix="Location" field="location" errors={state.errors} className="mt-2 text-sm text-red-600" />
                                 </div>
                             </div>
-
                             <div>
-                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-slate-900">
-                                    {t.contact.form.messageLabel}
-                                </label>
+                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.messageLabel}</label>
                                 <div className="mt-2.5">
-                                    <textarea
-                                        name="message"
-                                        id="message"
-                                        rows={4}
-                                        required
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                                    />
+                                    <textarea name="message" id="message" rows={4} required className="block w-full rounded-md border-0 px-3.5 py-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" />
                                     <ValidationError prefix="Message" field="message" errors={state.errors} className="mt-2 text-sm text-red-600" />
                                 </div>
                             </div>
@@ -147,24 +96,24 @@ export function Contact() {
                             <Button type="submit" size="lg" className="w-full" disabled={state.submitting}>
                                 {state.submitting ? t.contact.form.sending : t.contact.form.submitButton}
                             </Button>
-                            <p className="mt-4 text-xs text-center text-slate-500">
-                                {t.contact.form.availabilityNote}
-                            </p>
+                            <p className="mt-4 text-xs text-center text-slate-500">{t.contact.form.availabilityNote}</p>
                         </div>
                     </form>
 
                     <div className="mt-12 text-center">
                         <p className="text-slate-600 mb-4">{t.contact.form.emailDirectly}</p>
-                        <a
-                            href="mailto:dannibookkeeping@gmail.com"
-                            className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:text-primary/80 transition-colors"
-                        >
+                        <a href="mailto:dannibookkeeping@gmail.com" className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:text-primary/80 transition-colors">
                             <Mail className="h-5 w-5" />
                             dannibookkeeping@gmail.com
                         </a>
                     </div>
                 </div>
             </div>
+
+            {/* Back to top button */}
+            <a href="#" className="fixed bottom-8 right-8 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 transition-colors z-50">
+                <ArrowUp className="h-5 w-5" />
+            </a>
         </section>
     );
 }
