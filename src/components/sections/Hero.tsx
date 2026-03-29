@@ -1,13 +1,11 @@
 'use client';
-
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Hero() {
     const { t } = useLanguage();
-
     return (
         <section className="relative overflow-hidden bg-slate-50 py-20 sm:py-32 lg:pb-32 xl:pb-36">
             <div className="absolute inset-0 z-0">
@@ -25,17 +23,17 @@ export function Hero() {
                     </p>
                     <div className="mt-8 flex gap-x-4">
                         <Link
-                            href="#contact"
+                            href="#services"
                             className={buttonVariants({ size: 'lg', className: "group flex items-center gap-2" })}
                         >
-                            {t.hero.ctaPrimary}
+                            {t.hero.ctaSecondary}
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                         <Link
-                            href="#services"
+                            href="#contact"
                             className={buttonVariants({ variant: 'outline', size: 'lg' })}
                         >
-                            {t.hero.ctaSecondary}
+                            {t.hero.ctaPrimary}
                         </Link>
                     </div>
                 </div>
