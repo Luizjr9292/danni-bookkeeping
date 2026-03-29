@@ -6,8 +6,6 @@ import { Menu, X, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-
-
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
@@ -15,6 +13,7 @@ export function Navbar() {
     const navLinks = [
         { name: t.nav.services, href: '#services' },
         { name: t.nav.process, href: '#process' },
+        { name: t.nav.pricing, href: '#pricing' },
         { name: t.nav.about, href: '#about' },
         { name: t.nav.contact, href: '#contact' },
     ];
@@ -123,4 +122,3 @@ export function Navbar() {
         </nav>
     );
 }
-
