@@ -13,8 +13,8 @@ export function Navbar() {
     const navLinks = [
         { name: t.nav.services, href: '#services' },
         { name: t.nav.process, href: '#process' },
-        { name: t.nav.pricing, href: '#pricing' },
         { name: t.nav.about, href: '#about' },
+        { name: t.nav.pricing, href: '#pricing' },
         { name: t.nav.contact, href: '#contact' },
     ];
 
@@ -59,7 +59,7 @@ export function Navbar() {
                         </button>
                     </div>
 
-                    <Link href="#contact" className={buttonVariants({ size: 'sm' })}>
+                    <Link href="https://calendly.com/dannibookkeeping/20min" target="_blank" className={buttonVariants({ size: 'sm' })}>
                         {t.nav.bookConsultation}
                     </Link>
                 </div>
@@ -76,7 +76,7 @@ export function Navbar() {
                         <span className="text-slate-300">|</span>
                         <button
                             onClick={() => setLanguage('zh')}
-                            className={`transition-colors hover:text-primary ${language === 'zh' ? 'text-primary font-bold' : 'text-slate-400'}`}
+                            className={`transition-colors hover:text-primary ${language === 'zh' ? 'text-primary font-bold' : 'text-slate.400'}`}
                         >
                             中文
                         </button>
@@ -109,7 +109,8 @@ export function Navbar() {
 
                         <div className="pt-2">
                             <Link
-                                href="#contact"
+                                href="https://calendly.com/dannibookkeeping/20min"
+                                target="_blank"
                                 className={buttonVariants({ className: 'w-full' })}
                                 onClick={() => setIsOpen(false)}
                             >
