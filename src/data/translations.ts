@@ -3,6 +3,7 @@ export const translations = {
         nav: {
             services: 'Services',
             process: 'Process',
+            pricing: 'Pricing',
             about: 'About',
             contact: 'Contact',
             bookConsultation: 'Book a Consultation',
@@ -37,6 +38,10 @@ export const translations = {
                 {
                     title: 'Business Insights & Reporting',
                     description: 'Monthly financial insights and customized metrics dashboards to help you make informed decisions.',
+                },
+                {
+                    title: 'Multi-Entity Bookkeeping',
+                    description: 'Seamless bookkeeping support for business owners operating multiple entities, keeping each set of accounts accurate, compliant, and clearly structured.',
                 },
             ],
         },
@@ -82,13 +87,14 @@ export const translations = {
         },
         pricing: {
             title: 'Simple, Transparent Pricing',
-            subtitle: 'Flexible packages to suit your business needs. Starting from $150/month.',
+            subtitle: 'Flexible packages to suit your business needs.',
             cta: 'Book a Free Consultation',
-            note: 'All packages include free onboarding. No lock-in contracts.',
+            note: 'Free onboarding consultation included with all packages — virtual (NZ-wide) or in-person (Tauranga only). No lock-in contracts. 30 days written notice required to cancel. Prices may vary depending on business complexity.',
+            oneOff: 'Need a one-off service? Get in touch and we\'ll tailor a solution to your specific needs.',
             items: [
                 {
                     name: 'Starter',
-                    price: '$150',
+                    price: '$200',
                     period: '/month',
                     description: 'Perfect for sole traders and very small businesses.',
                     features: [
@@ -96,11 +102,12 @@ export const translations = {
                         'Monthly GST filing',
                         'Basic financial report',
                         'Email support',
+                        'Monthly check-in 30 min — virtual (NZ-wide) or in-person (Tauranga only)',
                     ],
                 },
                 {
                     name: 'Standard',
-                    price: '$350',
+                    price: '$450',
                     period: '/month',
                     description: 'Ideal for growing businesses with employees.',
                     features: [
@@ -108,13 +115,15 @@ export const translations = {
                         'Payroll for up to 5 staff',
                         'Accounts payable & receivable',
                         'Monthly insights report',
+                        'Fixed asset register maintenance',
                         'Priority support',
+                        'Monthly check-in 45 min — virtual (NZ-wide) or in-person (Tauranga only)',
                     ],
                     highlight: true,
                 },
                 {
                     name: 'Premium',
-                    price: '$650',
+                    price: '$750',
                     period: '/month',
                     description: 'Full-service support for established businesses.',
                     features: [
@@ -122,7 +131,9 @@ export const translations = {
                         'Unlimited payroll',
                         'Cash flow forecasting',
                         'Xero setup & training',
+                        'Multi-entity bookkeeping support',
                         'Dedicated account manager',
+                        'Extended monthly check-in 60 min — virtual (NZ-wide) or in-person (Tauranga only)',
                     ],
                 },
             ],
@@ -171,6 +182,7 @@ export const translations = {
         nav: {
             services: '服务项目',
             process: '服务流程',
+            pricing: '收费方案',
             about: '关于我们',
             contact: '联系我们',
             bookConsultation: '预约咨询',
@@ -205,6 +217,10 @@ export const translations = {
                 {
                     title: '业务洞察与报表',
                     description: '每月的财务分析和定制化仪表板，助您做出明智的业务决策。',
+                },
+                {
+                    title: '多实体簿记',
+                    description: '为拥有多家企业实体的业主提供无缝簿记支持，确保每套账目准确、合规、结构清晰。',
                 },
             ],
         },
@@ -250,13 +266,14 @@ export const translations = {
         },
         pricing: {
             title: '透明定价，简单明了',
-            subtitle: '灵活套餐，满足您的业务需求。月费低至 $150 起。',
+            subtitle: '灵活套餐，满足您的业务需求。',
             cta: '预约免费咨询',
-            note: '所有套餐均包含免费入门指导，无锁定合同。',
+            note: '所有套餐均包含免费入门咨询——线上服务覆盖全纽，面对面服务仅限陶朗加。无锁定合同，取消需提前30天书面通知。实际价格可能因业务复杂程度而有所不同。',
+            oneOff: '需要单次服务？欢迎联系我们，我们将根据您的具体需求量身定制解决方案。',
             items: [
                 {
                     name: '基础套餐',
-                    price: '$150',
+                    price: '$200',
                     period: '/月',
                     description: '适合个体经营者及微型企业。',
                     features: [
@@ -264,11 +281,12 @@ export const translations = {
                         '每月 GST 申报',
                         '基础财务报告',
                         '邮件支持',
+                        '每月30分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
                     ],
                 },
                 {
                     name: '标准套餐',
-                    price: '$350',
+                    price: '$450',
                     period: '/月',
                     description: '适合有员工的成长型企业。',
                     features: [
@@ -276,13 +294,15 @@ export const translations = {
                         '最多 5 名员工的薪资管理',
                         '应付及应收账款管理',
                         '每月业务洞察报告',
+                        '固定资产登记管理',
                         '优先支持',
+                        '每月45分钟沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
                     ],
                     highlight: true,
                 },
                 {
                     name: '高级套餐',
-                    price: '$650',
+                    price: '$750',
                     period: '/月',
                     description: '适合成熟企业的全方位财务支持。',
                     features: [
@@ -290,7 +310,9 @@ export const translations = {
                         '无限员工薪资管理',
                         '现金流预测',
                         'Xero 系统设置与培训',
+                        '多实体簿记支持',
                         '专属客户经理',
+                        '每月60分钟延长沟通——线上（覆盖全纽）或面对面（仅限陶朗加）',
                     ],
                 },
             ],
