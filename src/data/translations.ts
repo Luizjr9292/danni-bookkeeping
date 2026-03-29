@@ -161,7 +161,7 @@ export const translations = {
                 locationLabel: 'Location (Region in NZ)',
                 locationPlaceholder: 'e.g. Tauranga, Wellington, Auckland',
                 messageLabel: 'How can I help you?',
-                submitButton: 'Schedule a Call',
+                submitButton: 'Send a Message',
                 sending: 'Sending...',
                 successTitle: 'Thank you!',
                 successMessage: 'I have received your message and will get back to you shortly to schedule our consultation.',
