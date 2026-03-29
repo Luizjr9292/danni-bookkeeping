@@ -4,7 +4,6 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Pricing() {
     const { t } = useLanguage();
-
     return (
         <section id="pricing" className="bg-white py-20 sm:py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -37,6 +36,7 @@ export function Pricing() {
                     })}
                 </div>
                 <p className="mt-10 text-center text-sm text-slate-500">{t.pricing.note}</p>
+                <p className="mt-4 text-center text-sm font-medium text-primary">{t.pricing.oneOff}</p>
             </div>
         </section>
     );
