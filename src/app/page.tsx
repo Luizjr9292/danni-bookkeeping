@@ -5,6 +5,7 @@ import { VirtualAdvantage } from "@/components/sections/VirtualAdvantage";
 import { Process } from "@/components/sections/Process";
 import { About } from "@/components/sections/About";
 import { Pricing } from "@/components/sections/Pricing";
+import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <About />
       <Pricing />
+      <FAQ />
       <Contact />
     </div>
   );

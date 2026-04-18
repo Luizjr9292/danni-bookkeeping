@@ -66,7 +66,7 @@ export const translations = {
                 },
                 {
                     name: 'Premium', price: '$750', period: '/month', description: 'Full-service support for established businesses.',
-                    features: ['Everything in Standard', 'Unlimited payroll', 'Cash flow forecasting', 'Xero setup & training', 'Multi-entity bookkeeping support', 'Dedicated account manager', 'Extended monthly check-in 60 min — virtual (NZ-wide) or in-person (Tauranga only)'],
+                    features: ['Everything in Standard', 'Unlimited payroll', 'Cash flow forecasting', 'Xero setup & onboarding support', 'Multi-entity bookkeeping support', 'Dedicated account manager', 'Extended monthly check-in 60 min — virtual (NZ-wide) or in-person (Tauranga only)'],
                 },
             ],
         },
@@ -109,6 +109,40 @@ export const translations = {
                 availabilityNote: 'I typically respond within 24 hours. Consultations are held after-hours and on weekends to provide dedicated focus to your business.',
                 emailDirectly: 'Prefer to email directly?',
             },
+        },
+        faq: {
+            title: 'Frequently Asked Questions',
+            subtitle: 'Everything you need to know before getting started.',
+            items: [
+                {
+                    question: "What's the difference between a bookkeeper and an accountant?",
+                    answer: "A bookkeeper keeps your day-to-day records organised — transactions, reconciliations, GST, payroll. An accountant interprets that data for strategy, tax planning, and compliance. Danni brings both perspectives, with a background in NZ accounting firms, so your books are done with the full financial picture in mind.",
+                },
+                {
+                    question: "Do I need to be based in Tauranga?",
+                    answer: "No. Everything is handled securely online via Xero. I work with businesses across New Zealand.",
+                },
+                {
+                    question: "What software do you use?",
+                    answer: "I specialise in Xero and am a certified Xero Advisor. If you're not on Xero yet, I can help you get set up as part of the Premium package.",
+                },
+                {
+                    question: "Do you handle GST returns?",
+                    answer: "Yes — GST preparation and filing is included in all packages.",
+                },
+                {
+                    question: "Can you work alongside my accountant?",
+                    answer: "Absolutely. Bookkeepers and accountants work best as a team — I keep your records accurate and up to date so your accountant has clean data to work with at year end.",
+                },
+                {
+                    question: "Is there a lock-in contract?",
+                    answer: "No. All packages require 30 days written notice to cancel.",
+                },
+                {
+                    question: "How do we get started?",
+                    answer: "Book a free 20-minute discovery call. We'll discuss your needs, I'll recommend the right package, and onboarding is included at no extra cost.",
+                },
+            ],
         },
         footer: {
             expertVirtual: 'Expert virtual bookkeeping for small businesses across New Zealand. Based in Tauranga, serving you wherever you are.',
@@ -185,7 +219,7 @@ export const translations = {
                 },
                 {
                     name: '高级套餐', price: '$750', period: '/月', description: '适合成熟企业的全方位财务支持。',
-                    features: ['含标准套餐所有服务', '无限员工薪资管理', '现金流预测', 'Xero 系统设置与培训', '多实体簿记支持', '专属客户经理', '每月60分钟延长沟通——线上（覆盖全纽）或面对面（仅限陶朗加）'],
+                    features: ['含标准套餐所有服务', '无限员工薪资管理', '现金流预测', 'Xero 系统设置与入职支持', '多实体簿记支持', '专属客户经理', '每月60分钟延长沟通——线上（覆盖全纽）或面对面（仅限陶朗加）'],
                 },
             ],
         },
@@ -228,6 +262,40 @@ export const translations = {
                 availabilityNote: '我通常会在 24 小时内回复。为了更专注于您的业务需求，咨询通常安排在非工作时间或周末。',
                 emailDirectly: '直接发邮件？',
             },
+        },
+        faq: {
+            title: '常见问题',
+            subtitle: '开始合作前，您可能想了解的一切。',
+            items: [
+                {
+                    question: '簿记员和会计师有什么区别？',
+                    answer: '簿记员负责整理您的日常账务记录——包括交易处理、银行对账、GST 申报和薪资管理。会计师则分析这些数据，用于战略规划、税务筹划和合规管理。Danni 兼具两者的专业背景，拥有新西兰会计师事务所的从业经验，因此您的账务处理始终着眼于全局财务视角。',
+                },
+                {
+                    question: '我需要在陶朗加吗？',
+                    answer: '不需要。所有事务均通过 Xero 安全在线处理。我为全新西兰的企业提供服务。',
+                },
+                {
+                    question: '您使用什么软件？',
+                    answer: '我专注于 Xero，并持有 Xero 认证顾问资质。如果您尚未使用 Xero，我可以作为高级套餐的一部分帮助您完成系统设置。',
+                },
+                {
+                    question: '您负责处理 GST 申报吗？',
+                    answer: '是的——所有套餐均包含 GST 编制和申报服务。',
+                },
+                {
+                    question: '您能与我的会计师协同工作吗？',
+                    answer: '当然可以。簿记员和会计师作为团队配合效果最佳——我负责保持您的账务记录准确及时，让您的会计师在年末拥有清晰的数据可以使用。',
+                },
+                {
+                    question: '是否有锁定合同？',
+                    answer: '没有。所有套餐均需提前30天书面通知方可取消。',
+                },
+                {
+                    question: '我们如何开始？',
+                    answer: '预约一次免费的20分钟探索通话。我们将讨论您的需求，我会推荐合适的套餐，入职支持免费包含在内。',
+                },
+            ],
         },
         footer: {
             expertVirtual: '我定居在陶朗加，为全纽小微企业提供专业的云端簿记服务。',
