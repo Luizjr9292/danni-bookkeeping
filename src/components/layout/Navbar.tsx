@@ -13,6 +13,7 @@ export function Navbar() {
         { name: t.nav.process, href: '#process' },
         { name: t.nav.about, href: '#about' },
         { name: t.nav.pricing, href: '#pricing' },
+        { name: t.nav.faq, href: '#faq' },
         { name: t.nav.contact, href: '#contact' },
     ];
 
