@@ -30,6 +30,8 @@ export const translations = {
                 { title: 'Business Insights & Reporting', description: 'Monthly financial insights and customized metrics dashboards to help you make informed decisions.' },
                 { title: 'Multi-Entity Bookkeeping', description: 'Seamless bookkeeping support for business owners operating multiple entities, keeping each set of accounts accurate, compliant, and clearly structured.' },
             ],
+            ctaText: "Interested in our services? Let's talk.",
+            ctaBtn: 'Get in Touch',
         },
         virtualAdvantage: {
             title: 'The Virtual Advantage',
@@ -184,6 +186,8 @@ export const translations = {
                 { title: '业务洞察与报表', description: '每月的财务分析和定制化仪表板，助您做出明智的业务决策。' },
                 { title: '多实体簿记', description: '为拥有多家企业实体的业主提供无缝簿记支持，确保每套账目准确、合规、结构清晰。' },
             ],
+            ctaText: '对我们的服务感兴趣？欢迎联系。',
+            ctaBtn: '立即联系',
         },
         virtualAdvantage: {
             title: '云端服务优势',

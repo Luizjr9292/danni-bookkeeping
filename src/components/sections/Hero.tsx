@@ -1,6 +1,6 @@
 'use client';
 import { buttonVariants } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -17,8 +17,9 @@ export function Hero() {
                 <div className="max-w-2xl">
                     <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">{t.hero.titlePart1} <span className="text-primary">{t.hero.titlePart2}</span></h1>
                     <p className="mt-6 text-lg text-slate-600">{t.hero.subtitle}</p>
-                    <div className="mt-8">
-                        <Link href="#services" className={buttonVariants({ size: 'lg', className: "group flex items-center gap-2" })}>{t.hero.ctaSecondary}<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></Link>
+                    <div className="mt-8 flex flex-wrap items-center gap-4">
+                        <a href="https://calendly.com/dannibookkeeping/20min" target="_blank" className={buttonVariants({ size: 'lg', className: "group flex items-center gap-2" })}><Calendar className="h-4 w-4" />{t.hero.ctaPrimary}</a>
+                        <Link href="#services" className={buttonVariants({ variant: 'outline', size: 'lg', className: "group flex items-center gap-2" })}>{t.hero.ctaSecondary}<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></Link>
                     </div>
                 </div>
             </div>

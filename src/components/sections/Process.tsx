@@ -1,9 +1,6 @@
 'use client';
 
-import { FileInput, Calculator, BadgeCheck, PieChart } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
-const stepIcons = [FileInput, Calculator, BadgeCheck, PieChart];
 
 export function Process() {
     const { t } = useLanguage();

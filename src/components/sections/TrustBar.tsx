@@ -11,14 +11,15 @@ export function TrustBar() {
                 <p className="text-center text-sm font-semibold text-slate-500 uppercase tracking-wider mb-8">
                     {t.trustBar.text}
                 </p>
+                {/* Replace this SVG with the official badge PNG from xero.com/nz/partners once downloaded */}
                 <div className="flex flex-wrap justify-center items-center">
-                    {/* Xero Badge Placeholder */}
-                    <div className="flex items-center gap-3 opacity-90 hover:opacity-100 transition-all duration-300">
-                        <div className="h-12 w-12 rounded-full bg-[#0D91D8] flex items-center justify-center text-white font-bold text-xl shadow-sm">X</div>
-                        <div className="flex flex-col">
-                            <span className="text-xl font-black text-[#0D91D8] tracking-tight leading-none">Xero</span>
-                            <span className="text-[0.65rem] font-bold text-slate-500 uppercase tracking-widest border-t border-slate-300 mt-1 pt-0.5">Certified Advisor</span>
-                        </div>
+                    <div className="opacity-90 hover:opacity-100 transition-all duration-300">
+                        <svg width="180" height="56" viewBox="0 0 180 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Xero Certified Advisor">
+                            <rect width="180" height="56" rx="6" fill="#0D91D8" />
+                            <text x="90" y="24" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="20" fontWeight="800" letterSpacing="-0.5">xero</text>
+                            <line x1="20" y1="32" x2="160" y2="32" stroke="white" strokeOpacity="0.4" strokeWidth="0.75" />
+                            <text x="90" y="46" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="9" fontWeight="600" letterSpacing="2">CERTIFIED ADVISOR</text>
+                        </svg>
                     </div>
                 </div>
             </div>

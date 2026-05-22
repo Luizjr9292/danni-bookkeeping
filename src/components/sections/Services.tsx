@@ -27,8 +27,8 @@ export function Services() {
                     })}
                 </div>
                 <div className="mt-16 text-center">
-                    <p className="text-lg text-slate-600 mb-6">Interested in our services? Let's talk.</p>
-                    <Link href="#contact" className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-semibold text-white hover:bg-primary/90 transition-colors">Get in Touch</Link>
+                    <p className="text-lg text-slate-600 mb-6">{t.services.ctaText}</p>
+                    <Link href="#contact" className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-semibold text-white hover:bg-primary/90 transition-colors">{t.services.ctaBtn}</Link>
                 </div>
             </div>
         </section>
