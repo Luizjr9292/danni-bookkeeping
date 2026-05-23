@@ -23,6 +23,28 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Danni Bookkeeping | Expert Virtual Bookkeeping for NZ Small Businesses",
+    description: "Based in Tauranga, serving all of New Zealand. Xero Certified Advisor. I handle the numbers so you can focus on your business.",
+    url: "https://www.dannibookkeeping.co.nz",
+    siteName: "Danni Bookkeeping",
+    images: [
+      {
+        url: "https://www.dannibookkeeping.co.nz/danni-profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Danni Wang – Expert Virtual Bookkeeping for NZ Small Businesses",
+      },
+    ],
+    locale: "en_NZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Danni Bookkeeping | Expert Virtual Bookkeeping for NZ Small Businesses",
+    description: "Based in Tauranga, serving all of New Zealand. Xero Certified Advisor.",
+    images: ["https://www.dannibookkeeping.co.nz/danni-profile.jpg"],
+  },
 };
 
 export default function RootLayout({
