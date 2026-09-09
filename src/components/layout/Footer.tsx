@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Mail, MapPin } from 'lucide-react';
+import { MapPin, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Footer() {
@@ -32,9 +32,11 @@ export function Footer() {
                                 <MapPin size={16} />
                                 <span>Tauranga, Bay of Plenty</span>
                             </li>
-                            <li className="flex items-center space-x-2">
-                                <Mail size={16} />
-                                <span>dannibookkeeping@gmail.com</span>
+                            <li>
+                                <Link href="#contact" className="flex items-center space-x-2 hover:text-white">
+                                    <MessageSquare size={16} />
+                                    <span>{t.contact.sendMessageTitle}</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>

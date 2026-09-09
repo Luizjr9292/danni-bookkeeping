@@ -2,7 +2,7 @@
 
 import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@/components/ui/button';
-import { Mail, ArrowUp, Calendar, MessageSquare } from 'lucide-react';
+import { ArrowUp, Calendar, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Contact() {
@@ -35,24 +35,23 @@ export function Contact() {
                     <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{t.contact.title}</h2>
                     <p className="mt-4 text-lg text-slate-600">{t.contact.subtitle}</p>
                 </div>
-                <div className="mx-auto mt-12 max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start">
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center">
                         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4"><Calendar className="h-7 w-7" /></div>
                         <h3 className="text-xl font-bold text-slate-900 mb-2">{t.contact.bookCallTitle}</h3>
                         <p className="text-sm text-slate-600 mb-2">{t.contact.bookCallDesc}</p>
                         <p className="text-sm text-slate-500 mb-6">{t.contact.bookCallNote}</p>
-                        <a href="https://calendly.com/dannibookkeeping/20min" target="_blank" className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"><Calendar className="h-4 w-4" />{t.contact.bookCallBtn}</a>
+                        <a href="https://calendly.com/dannibookkeeping/20min" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"><Calendar className="h-4 w-4" />{t.contact.bookCallBtn}</a>
                     </div>
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center">
-                        <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-4"><MessageSquare className="h-7 w-7" /></div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">{t.contact.sendMessageTitle}</h3>
-                        <p className="text-sm text-slate-600 mb-2">{t.contact.sendMessageDesc}</p>
-                        <p className="text-sm text-slate-500 mb-6">{t.contact.sendMessageNote}</p>
-                        <a href="#message-form" className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-primary px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors"><MessageSquare className="h-4 w-4" />{t.contact.sendMessageBtn}</a>
-                    </div>
-                </div>
-                <div id="message-form" className="mx-auto mt-12 max-w-xl">
-                    <form onSubmit={handleSubmit} className="bg-white px-8 py-10 shadow-lg rounded-2xl border border-slate-100">
+                    <form id="message-form" onSubmit={handleSubmit} className="bg-white px-8 py-10 shadow-lg rounded-2xl border border-slate-100">
+                        <div className="mb-8">
+                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                                <MessageSquare className="h-6 w-6" />
+                            </div>
+                            <h3 className="text-xl font-bold text-slate-900">{t.contact.sendMessageTitle}</h3>
+                            <p className="mt-2 text-sm text-slate-600">{t.contact.sendMessageDesc}</p>
+                            <p className="mt-1 text-sm text-slate-500">{t.contact.sendMessageNote}</p>
+                        </div>
                         <div className="grid grid-cols-1 gap-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-semibold leading-6 text-slate-900">{t.contact.form.nameLabel}</label>
@@ -80,10 +79,6 @@ export function Contact() {
                             <p className="mt-4 text-xs text-center text-slate-500">{t.contact.form.availabilityNote}</p>
                         </div>
                     </form>
-                    <div className="mt-12 text-center">
-                        <p className="text-slate-600 mb-4">{t.contact.form.emailDirectly}</p>
-                        <a href="mailto:dannibookkeeping@gmail.com" className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:text-primary/80 transition-colors"><Mail className="h-5 w-5" />dannibookkeeping@gmail.com</a>
-                    </div>
                 </div>
             </div>
             <a href="#" className="fixed bottom-8 right-8 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 transition-colors z-50"><ArrowUp className="h-5 w-5" /></a>

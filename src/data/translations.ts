@@ -110,7 +110,6 @@ export const translations = {
                 successMessage: 'I have received your message and will get back to you shortly to schedule our consultation.',
                 sendAnother: 'Send another message',
                 availabilityNote: 'I typically respond within 24 hours. Consultations are held after-hours and on weekends to provide dedicated focus to your business.',
-                emailDirectly: 'Prefer to email directly?',
             },
         },
         faq: {
@@ -266,7 +265,6 @@ export const translations = {
                 successMessage: '已收到您的留言，我会尽快联系您安排咨询。',
                 sendAnother: '发送另一条留言',
                 availabilityNote: '我通常会在 24 小时内回复。为了更专注于您的业务需求，咨询通常安排在非工作时间或周末。',
-                emailDirectly: '直接发邮件？',
             },
         },
         faq: {

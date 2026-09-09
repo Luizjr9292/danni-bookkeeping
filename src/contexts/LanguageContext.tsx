@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useSyncExternalStore, ReactNode } from 'react';
 import { translations } from '@/data/translations';
 
 type Language = 'en' | 'zh';
@@ -13,20 +13,34 @@ interface LanguageContextType {
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LANGUAGE_STORAGE_KEY = 'danni-lang';
+const LANGUAGE_CHANGE_EVENT = 'danni-language-change';
+
+function getStoredLanguage(): Language {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    return stored === 'zh' ? 'zh' : 'en';
+}
+
+function getServerLanguage(): Language {
+    return 'en';
+}
+
+function subscribeToLanguage(onStoreChange: () => void) {
+    window.addEventListener('storage', onStoreChange);
+    window.addEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+
+    return () => {
+        window.removeEventListener('storage', onStoreChange);
+        window.removeEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+    };
+}
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [language, setLanguage] = useState<Language>('en');
-
-    useEffect(() => {
-        const stored = localStorage.getItem('danni-lang') as Language | null;
-        if (stored === 'en' || stored === 'zh') {
-            setLanguage(stored);
-        }
-    }, []);
+    const language = useSyncExternalStore(subscribeToLanguage, getStoredLanguage, getServerLanguage);
 
     const handleSetLanguage = (lang: Language) => {
-        setLanguage(lang);
-        localStorage.setItem('danni-lang', lang);
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+        window.dispatchEvent(new Event(LANGUAGE_CHANGE_EVENT));
     };
 
     return (
